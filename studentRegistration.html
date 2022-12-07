@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      label {
+        color: #e84393;
+      }
+      input[type="text"],
+      input[type="number"] {
+        color: crimson;
+        border: 1px solid #81ecec;
+        width: 200px;
+        height: 25px;
+        border-radius: 10px;
+        text-transform: capitalize;
+      }
+      input[type="email"],
+      input[type="password"] {
+        color: crimson;
+        border: 1px solid #81ecec;
+        width: 200px;
+        height: 25px;
+        border-radius: 10px;
+        text-transform: lowercase;
+      }
+      input[type="date"],
+      input[type="week"],
+      input[type="time"] {
+        color: crimson;
+        border: 1px solid #81ecec;
+        width: 200px;
+        height: 25px;
+        border-radius: 10px;
+      }
+      textarea {
+        color: crimson;
+        border: 1px solid #81ecec;
+        width: 200px;
+        height: 90px;
+        border-radius: 10px;
+      }
+      button:hover {
+        background-color: chocolate;
+      }
+      button[type="submit"] {
+        border-radius: 10px;
+        color: rgb(219, 24, 73);
+        width: 80px;
+        height: 25px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      button[type="reset"] {
+        border-radius: 10px;
+        color: rgb(219, 24, 73);
+        width: 80px;
+        height: 25px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-image: url(pexels-tbee-82256.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #form {
+        color: blueviolet;
+        background-color: yellow;
+        height: 20px;
+        width: 220px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3 id="form">Student Registration Form</h3>
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td><label> First Name </label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Capital letter only"
+                required
+                autofocus
+                maxlength="15"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label> Last Name </label></td>
+            <td><input type="text" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Mobile Number </label></td>
+            <td><input type="number" placeholder="Max 10 digits" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Email ID </label></td>
+            <td><input type="email" placeholder="abc@gmail.com" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Password </label></td>
+            <td><input type="password" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Date of Birth </label></td>
+            <td><input type="date" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Available in week</label></td>
+            <td><input type="week" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Available in time</label></td>
+            <td><input type="time" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Profile Photo</label></td>
+            <td><input type="file" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Upload Graduation Mark sheets</label></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+
+          <tr>
+            <td><label> Graduation</label></td>
+            <td>
+              <select>
+                <option>BE</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>BSC</option>
+                <option>B. Tech</option>
+                <option>BCS</option>
+                <option>MSC</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Select Gender</label></td>
+            <td>
+              <input type="radio" name="gender" /> <label> Male </label>
+              <input type="radio" name="gender" /> <label> Female </label>
+              <input type="radio" name="gender" /> <label> Others </label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Select Training</label></td>
+            <td>
+              <input type="checkbox" /> <label> Angular</label>
+              <input type="checkbox" /> <label> React </label>
+              <input type="checkbox" /> <label> Java </label>
+              <input type="checkbox" /> <label> Data Science </label>
+              <input type="checkbox" />
+              <label> Manual + Automation Testing </label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label> State </label></td>
+            <td><input type="text" value="MH" readonly /></td>
+          </tr>
+
+          <tr>
+            <td><label> Country</label></td>
+            <td><input type="text" value="India" disabled /></td>
+          </tr>
+
+          <tr>
+            <td><label> Age </label></td>
+            <td><input type="number" placeholder="Only numbers" required /></td>
+          </tr>
+          <tr>
+            <td><label> Present Address </label></td>
+            <td><textarea rows="7" cols="40"></textarea></td>
+          </tr>
+          <!-- <tr>
+            <td><input type="Submit" /></td>
+            <td><input type="Reset" /></td>
+          </tr> -->
+
+          <tr>
+            <td><button type="submit">Register</button></td>
+            <td><button type="reset">Clear all</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
