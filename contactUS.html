@@ -2,15 +2,61 @@
 <html>
   <head>
     <title>Contact</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-      .contact{
+      .contact {
         color: blueviolet;
         background-color: yellow;
+        height: 20px;
+        width: 180px;
       }
-      *{
-        font-family: 'Josefin Sans', sans-serif;
+      input[type="text"] {
+        color: crimson;
+        border: 1px solid #81ecec;
+        width: 200px;
+        height: 25px;
+        border-radius: 10px;
+        text-transform: uppercase;
+      }
+      input[type="number"] {
+        color: crimson;
+        border: 1px solid #81ecec;
+        width: 200px;
+        height: 25px;
+        border-radius: 10px;
+      }
+      input[type="email"] {
+        color: crimson;
+        border: 1px solid #81ecec;
+        width: 200px;
+        height: 25px;
+        border-radius: 10px;
+        text-transform: lowercase;
+      }
+      textarea {
+        color: crimson;
+        border: 1px solid #81ecec;
+        width: 200px;
+        height: 90px;
+        border-radius: 10px;
+      }
+      * {
+        font-family: "Josefin Sans", sans-serif;
+      }
+      input:hover {
+        background-color: chocolate;
+      }
+      input[type="submit"] {
+        border-radius: 10px;
+        color: rgb(219, 24, 73);
+        width: 80px;
+        height: 25px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
     </style>
   </head>
@@ -44,7 +90,7 @@
             <td><textarea rows="6" cols="36"></textarea></td>
           </tr>
           <tr>
-            <td><input type="submit"></td>
+            <td><input type="submit" /></td>
           </tr>
         </tbody>
       </table>
